@@ -619,6 +619,8 @@ footer p {
     }
     nav.mobile-menu{
         display: flex!important;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     nav#nav{
     display: none;
