@@ -184,3 +184,25 @@ const singlePortfolio = (data) => {
   modal.appendChild(div);
 };
 loadData();
+
+// fade in animation
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("fadeIn");
+    } else {
+      reveals[i].classList.remove("fadeIn");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on the page load
+reveal();

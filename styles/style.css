@@ -21,6 +21,17 @@
 body{
     background-color: #1F1345;
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.fadeIn{
+    transform: translateY(0);
+        opacity: 1;
+}
 .container{
     width: 85%;
     margin: 0 auto;
@@ -596,10 +607,14 @@ footer p {
     nav#nav{
     display: none;
     }
-    /* nav .logo img{
+    nav .logo img{
         width: 100px;
 
-    } */
+    }
+    .fixed-nav{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
     .container{
         width: 90%;
     }
@@ -640,6 +655,10 @@ footer p {
         font-size: 16px;
         color: #ddd;
         margin-bottom: 15px;
+    }
+    .banner-btn  a{
+        display: block;
+        text-align: center;
     }
     .about-banner-box{
         display: grid;
