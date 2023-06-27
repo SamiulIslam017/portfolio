@@ -1,10 +1,10 @@
 // For sticky navbar
 let nav = document.querySelector("#nav");
-let nav2 = document.querySelector("#nav_two");
+// let nav2 = document.querySelector("#nav_two");
 window.addEventListener("scroll", function () {
   nav.classList.toggle("fixed-nav", window.scrollY > 200);
 
-  nav2.classList.toggle("fixed-nav", window.scrollY > 0);
+  // nav2.classList.toggle("fixed-nav", window.scrollY > 100);
 });
 
 // active desktop menu

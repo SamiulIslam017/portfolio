@@ -661,6 +661,9 @@ footer p {
         
     
     }
+    .banner-image{
+        margin-top: 150px;
+    }
     .banner-text h1{
         font-size: 18px;
         
@@ -677,6 +680,8 @@ footer p {
     .banner-btn  a{
         display: block;
         text-align: center;
+        padding: 12px;
+        font-size: 14px;
     }
     .about-banner-box{
         display: grid;
@@ -687,6 +692,33 @@ footer p {
     
     .about-banner-box .box{
        text-align: center;
+       padding: 20px;
+    }
+    .about-banner-box .box p{
+        font-size: 16px;
+    }
+    .about-banner-box .box h2 {
+        font-size: 22px;
+    }
+    .about-banner-box .box i {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .item {
+        gap: 20px;
+    }
+    .item .item-image{
+        min-height: fit-content;
+        background-color: transparent;
+    }
+    .item .item-image:hover {
+        background-color: transparent;
+    }
+    .item .item-image i {
+        font-size: 40px;
+    }
+    .item-text{
+        align-items: center;
     }
     .section-heading{
         position: relative;
@@ -700,22 +732,27 @@ footer p {
        
     }
     .section-heading h3{
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: -50px;
     }
     .section-heading h1{
-    font-size: 46px;
+    font-size: 36px;
     background-color: var(--secondary-color);
     position: absolute;
     /* padding: 20px; */
     left: 50%;
-    
+    bottom: 0;
     transform: translate(-50%);
     z-index: -1;
-    opacity: .1;
+    opacity: .8;
     width: 100%;
+    top: 40%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     .about-banner,
     .services-item,
@@ -726,7 +763,7 @@ footer p {
     }
     .services-item{
         grid-template-columns: repeat(1,1fr);
-        gap: 40px;
+        gap: 20px;
     }
     .item{
         flex-direction: column;
@@ -736,30 +773,50 @@ footer p {
         font-size: 20px;
     }
     .item-text {
-        padding: 0 20px;
+        padding: 0px;
+    }
+    .item-text p {
+        text-align: center;
     }
     .about{
         grid-template-columns: repeat(1,1fr);
+    }
+    .resume-btn a{
+        font-size: 14px;
+        padding: 12px;
     }
     .find-me{
         grid-template-columns: 1fr;
     }
     .contact-form {
-        width: 90%;
+        width: 100%;
         margin-inline: auto;
     }
     .contact-form {
-        padding: 30px;
+        padding: 20px;
     }
     .contact-form form{
         padding: 0px;
+    }
+    .contact-form form input, .contact-form form textarea{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .filter-menu,
+    .filter-item{
+        padding-left: 0;
+        gap: 15px;
+    }
+    .filter-menu li{
+        font-size: 14px;
+        padding: 5px 10px;
     }
     .filter-item{
         grid-template-columns: repeat(1,1fr);
     }
     .filter-item li{
-        width: 90%;
-        height: 250px;
+        width: 100%;
+        height: 280px;
         margin-bottom: 20px;
     }
     .filter-item li.active{
@@ -776,10 +833,17 @@ footer p {
 
 
 
+@media only screen and (min-width:640px) and (max-width:1200px){
+    .banner-btn  a{
+        display: block;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
 
 
-
-@media only screen and (min-width:577px) and (max-width:991px){
+@media only screen and (min-width:577px) and (max-width:1200px){
 
     nav#nav{
         display: none;
@@ -790,8 +854,17 @@ footer p {
     nav.mobile-menu{
         display: flex!important;
     }
+    .banner-btn  a{
+        display: block;
+        text-align: center;
+        padding: 14px;
+        font-size: 16px;
+    }
     .banner-section {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-image{
+        margin-top: 200px;
     }
     .about-banner, .services-item, .about, .contact-form, .portfolio-items {
         margin: 60px 0;
@@ -802,10 +875,31 @@ footer p {
     }
     .section-heading{
         height: 150px;
+        margin-top: 50px;
+    }
+    .section-heading h3{
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: -50px;
     }
     .section-heading h1{
-        font-size: 80px;
-    }
+    font-size: 40px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    /* padding: 20px; */
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    z-index: -1;
+    opacity: .8;
+    width: 100%;
+    top: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     .services-item {
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
@@ -817,20 +911,43 @@ footer p {
         grid-template-columns: 1fr 1fr;
     }
     .contact-form {
-        width: 90%;
+        width: 100%;
         margin-inline: auto;
     }
     .contact-form {
         padding: 20px;
     }
+    .contact-form form{
+        padding: 0px;
+    }
+    .contact-form form input, .contact-form form textarea{
+        font-size: 16px;
+        padding: 12px;
+    }
+    .filter-menu,
+    .filter-item{
+        padding-left: 0;
+        gap: 15px;
+    }
+    .filter-menu li{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
     .filter-item{
         grid-template-columns: repeat(2,1fr);
-        gap: 10px;
+        gap: 15px;
     }
-    
+    .filter-item li{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
     
     .filter-item li.active{
         transition: all 0.5s ease;
+    }
+    #myportfolio > div > div.portfolio-details.portfolio-items > ul.filter-item > li > div > span.d-md-none.d-lg-none.d-xl-none.btn.btn-primary.bg-white.text-black.border-0.mx-auto{
+        margin-top: 15px;
     }
     .filter-item img{
         width: 100%;
