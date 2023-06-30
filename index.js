@@ -107,10 +107,10 @@ function setData(item) {
     li.innerHTML = `
         <div class="text-center">
         <img class='rounded' src=${element.picture} >
-        <span  onclick='loadSingleData("${element.index}")' type="button" class="modal-btn d-none d-md-block" data-bs-toggle="modal" data-bs-target="#portfolio">
+        <span  onclick='loadSingleData("${element.index}")' type="button" class="modal-btn d-none d-lg-block d-xl-block" data-bs-toggle="modal" data-bs-target="#portfolio">
             <i  class="fa-solid fa-circle-info" title="Live Preview And More"></i>
         </span>
-        <span class="d-md-none d-lg-none d-xl-none btn btn-primary bg-white text-black border-0 mx-auto" onclick='loadSingleData("${element.index}")' type="button" data-bs-toggle="modal" data-bs-target="#portfolio">Details</span>
+        <span class=" d-lg-none d-xl-none btn btn-primary bg-white text-black border-0 mx-auto" onclick='loadSingleData("${element.index}")' type="button" data-bs-toggle="modal" data-bs-target="#portfolio">Details</span>
         </div>
         `;
     ul.appendChild(li);
