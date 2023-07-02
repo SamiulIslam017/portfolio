@@ -206,3 +206,27 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on the page load
 reveal();
+
+// Email js
+
+const successMassage = document.getElementById("mail_status");
+successMassage.innerText = "";
+function sendMail() {
+  var params = {
+    from_name: document.getElementById("fullName").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message_id").value,
+  };
+  emailjs.send("service_t4c65on", "template_0fp831i", params).then(
+    function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+      successMassage.innerText = "Thank you email send successfully.";
+      document.getElementById("fullName").value = "";
+      document.getElementById("email_id").value = "";
+      document.getElementById("message_id").value = "";
+    },
+    function (error) {
+      console.log("FAILED...", error);
+    }
+  );
+}

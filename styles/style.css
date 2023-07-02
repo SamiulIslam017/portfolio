@@ -388,14 +388,14 @@ nav .logo img{
     border-left: 6px solid var(--primary-color);
     margin-bottom: 40px;
 }
-.contact-form form{
+.contact-form .form{
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.contact-form form input,
-.contact-form form textarea{
+.contact-form .form input,
+.contact-form .form textarea{
     
     
     font-size: 20px;
@@ -406,18 +406,25 @@ nav .logo img{
     border-radius: 6px;
     transition: background-color .5s ease-out, color .5s ease-out;
 }
-.contact-form form input:focus,
-.contact-form form textarea:focus{
+.contact-form .form input:focus,
+.contact-form .form textarea:focus{
     background-color: var(--primary-color);
     color: #fff;
     border: 2px solid var(--primary-color);
 }
-.contact-form form input[type="submit"]{
+.contact-form .form button{
     width: 50%;
     cursor: pointer;
+    font-size: 20px;
+    color: var(--sticky-m-bg);
+    padding: 12px;
+    border: 2px solid transparent;
+    outline: 0;
+    border-radius: 6px;
+    transition: background-color .5s ease-out, color .5s ease-out;
     
 }
-.contact-form form input[type="submit"]:hover{
+.contact-form .form button:hover{
     color: var(--primary-color);
     background-color: var(--sticky-m-bg);
     border: 2px solid var(--primary-color);
@@ -808,10 +815,10 @@ footer p {
     .contact-form {
         padding: 20px;
     }
-    .contact-form form{
+    .contact-form .form{
         padding: 0px;
     }
-    .contact-form form input, .contact-form form textarea{
+    .contact-form .form input, .contact-form .form textarea, .contact-form .form button{
         font-size: 14px;
         padding: 10px;
     }
@@ -947,10 +954,10 @@ footer p {
     .contact-form {
         padding: 20px;
     }
-    .contact-form form{
+    .contact-form .form{
         padding: 0px;
     }
-    .contact-form form input, .contact-form form textarea{
+    .contact-form .form input, .contact-form .form textarea{
         font-size: 16px;
         padding: 12px;
     }
