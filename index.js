@@ -83,7 +83,7 @@ for (let i = 0; i < sortBtn.length; i++) {
 // something special for modal
 
 loadData = () => {
-  fetch("https://portfolio-server-brown.vercel.app/portfolio")
+  fetch("https://portfolio-server-samiulislam017.vercel.app/portfolio")
     .then((res) => res.json())
     .then((data) => {
       setData(data);
@@ -91,7 +91,7 @@ loadData = () => {
     });
 };
 function loadSingleData(id) {
-  const url = `https://portfolio-server-brown.vercel.app/portfolio/${id}`;
+  const url = `https://portfolio-server-samiulislam017.vercel.app/portfolio/${id}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
